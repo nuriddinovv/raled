@@ -1,0 +1,48 @@
+.container .header{
+    height: 20vh;
+}
+
+.partners .row .col-3 .partnerCard img {
+  width: 200px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.partners .row .col-3 .partnerCard img:hover {
+  filter: grayscale(0);
+}
+.row .col-3 {
+  padding: 10px;
+}
+.partners h1 {
+  padding: 8px;
+  border-bottom: 3px solid red;
+}
+.partners .partnersites .col .card .cardimg {
+  width: 230px;
+  height: 230px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners .partnersites .col .card {
+  border: none;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.partners .partnersites .col .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  scale: 1.05;
+}
+.partners .partnersites .col .card .cardimg img {
+  width: 100%;
+  margin: 0 auto;
+}
+.partners .partnersites .col .card .card-body {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

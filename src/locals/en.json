@@ -18,5 +18,13 @@
     "hour": "10:00 - 20:00",
     "tel": "Tel: +998 95 195-00-55",
     "social": "Social Medias"
+  },
+  "home": {
+    "partner": "Our Partners",
+    "my-gov": "Unified state interactive services portal",
+    "yoshlar-gov": "Youth Affairs Agency",
+    "uzbmb": "Knowledge and Skills Assessment Agency  ",
+    "edu": "Ministry of Higher Education",
+    "oak": "Higher Attestation Commission"
   }
 }

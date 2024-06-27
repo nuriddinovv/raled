@@ -18,5 +18,14 @@
     "hour": "10:00 - 20:00",
     "tel": "Tel: +998 95 195-00-55",
     "social": "Ijtimoiy tarqmoqlarimiz"
+  },
+  "home":{
+    "partner": "Bizning Hamkorlarimiz",
+    "mygov": "Yagona davlat interaktiv xizmatlari portali",
+    "yoshlargov": "Yoshlar ishlari agentligi",
+    "uzbmb": "Bilim va malakalarni baholash agentligi",
+    "edu": "Oliy ta'lim vazirligi",
+    "oak": "Oliy Attestatsiya Komissiyasi"
   }
+  
 }
