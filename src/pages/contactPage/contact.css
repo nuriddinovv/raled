@@ -1,0 +1,18 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.locations p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.locations p:hover {
+  color: #1e2f97;
+}
+.locations p:hover a{
+  color: #1e2f97;
+}

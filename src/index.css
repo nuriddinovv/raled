@@ -18,3 +18,8 @@ ul {
 li {
   list-style: none;
 }
+h1 {
+  padding: 8px;
+  font-weight: 700;
+  color: #1e2f97;
+}

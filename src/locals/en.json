@@ -27,5 +27,31 @@
     "uzbmb": "Knowledge and Skills Assessment Agency  ",
     "edu": "Ministry of Higher Education",
     "oak": "Higher Attestation Commission"
+  },
+  "about": {
+    "title": "About us",
+    "text1": "The journal Research in Adult Learning and Education (RALED) is a publication for Uzbek and global practitioners and researchers involved in lifelong learning, ensuring the quality of education and training for adults taking into account the requirements of the labor market.",
+    "text2": "We are committed to promoting lifelong learning and empowering people to thrive in an ever-changing society. We recognize the value of adult education as a transformative force that not only equips people with essential research-based and competency-based skills, but also promotes personal growth, social inclusion and economic development.",
+    "text3": "The magazine covers formal and non-formal education aimed at promoting adult participation in society and work. Each issue of our magazine is devoted to a wide range of topics, including, but not limited to the following areas:",
+    "list1": "Pedagogy, social and economic science;",
+    "list2": "Development of social partnership with the stakeholders in constructive way;",
+    "list3": "Advanced training and retraining of the personnel and management;",
+    "list4": "Education for adults;",
+    "list5": "On-the-job training;",
+    "list6": "Professional development;",
+    "raleb": "RALED strives to provide an environment for informed discussion of the principles and practices that guide the way all aspects of adult education and learning are taught and implemented throughout the world. It also provides a forum for the exchange of information and ideas among practitioners and researchers around the world.",
+    "text4": "Our team of distinguished researchers, educators, and practitioners are passionate about shedding light on the multifaceted aspects of adult learning. Through rigorous research, evidence-based research and thought-provoking analysis, we aim to contribute to scholarly discourse and inform policy and practice in adult education, and to present diverse perspectives and interdisciplinary research that reflect the global nature of adult education and the unique challenges faced by students in different societies and cultures.",
+    "text5": "Thank you to those who have joined us in this quest for knowledge and transformation. Let's explore the exciting field of adult learning and education together and work towards creating a more inclusive, equitable and enlightened society.",
+    "text6": "Submit your reserach paper XXXX or contact us via + 998 97 776-76-61"
+  },
+  "contact": {
+    "h1": "Contact us",
+    "title": "Contact us !",
+    "address": "Address:",
+    "address2": "Safdosh Street, 10",
+    "mail": "E-mail:",
+    "mailto": "academymahorat@gmail.com",
+    "phone": "Phone number:",
+    "phonenumber": "+998 95 195-00-55"
   }
 }
