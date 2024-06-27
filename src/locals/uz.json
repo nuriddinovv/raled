@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "redikt": "Tahririyat",
+    "books": "Maqolalar",
+    "send": "Material yuborish",
+    "contact": "Aloqa uchun",
+    "arxiv": "Arxiv"
+  },
+  "footer": {
+    "title": "Raled",
+    "address": "Manzilimiz",
+    "address1": "Tashkent, Uzbekistan",
+    "address2": "Safdosh Ko'chasi,10",
+    "open": "Ish vaqti",
+    "week": "Dushanba - Juma",
+    "hour": "10:00 - 20:00",
+    "tel": "Tel: +998 95 195-00-55",
+    "social": "Ijtimoiy tarqmoqlarimiz"
+  }
+}

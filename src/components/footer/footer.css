@@ -1,0 +1,48 @@
+.footer {
+  padding: 5rem 0;
+  color: white;
+  position: relative;
+}
+.footer .container {
+  position: relative;
+  z-index: 2;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+.footer .overlay {
+  background: #000000;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.title {
+  font-size: 20px;
+  border-left: 4px solid #1e2f97;
+  padding: 3px 12px;
+  margin: 8px 0;
+}
+.icon {
+  font-size: 32px;
+  display: flex;
+  gap: 12px;
+}
+.icon a {
+  transition: 0.4s;
+}
+.icon a:nth-child(1):hover {
+  color: #0866ff;
+  transform: translate(0, -3px);
+}
+.icon a:nth-child(2):hover {
+  transform: translate(0, -3px);
+}
+.icon a:nth-child(3):hover {
+  color: #21a7e5;
+  transform: translate(0, -3px);
+}
+.icon a:nth-child(4):hover {
+  color: red;
+  transform: translate(0, -3px);
+}

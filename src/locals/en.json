@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "home": "Main page",
+    "about": "About us",
+    "redikt": "Rediktion",
+    "books": "Articles",
+    "send": "Send materials",
+    "contact": "Contact us",
+    "arxiv": "Archive"
+  },
+  "footer": {
+    "title": "Raled",
+    "address": "Location",
+    "address1": "Tashkent, Uzbekistan",
+    "address2": "Safdosh Street,10",
+    "open": "Opening Hours",
+    "week": "Monday - Friday",
+    "hour": "10:00 - 20:00",
+    "tel": "Tel: +998 95 195-00-55",
+    "social": "Social Medias"
+  }
+}
