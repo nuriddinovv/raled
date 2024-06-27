@@ -19,7 +19,7 @@ export default function Home() {
       <div className="header"></div>
       <div className="partners">
         <h1 className="text-center">{text.home.partner}</h1>
-        <div className="row justify-content-center">
+        <div className="row my-5 justify-content-center">
           <div className="col-3 d-flex ">
             <Link to={"https://mahorat.tech/"}>
               <div className="partnerCard">
@@ -53,6 +53,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <h1 className="text-center">{text.home.links}</h1>
         <div className="row partnersites my-4 justify-content-center">
           <div className="col">
             <Link to={"https://my.gov.uz/"}>

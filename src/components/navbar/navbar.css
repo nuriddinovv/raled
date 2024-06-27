@@ -1,9 +1,14 @@
 nav {
-  /* background-color: brown; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   color: #1e2f97;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 12px 0;
   font-weight: 600;
+  background-color: white;
 }
 nav .container {
   display: flex;
@@ -19,7 +24,7 @@ nav .container {
 .nav_link ul li a {
   padding: 8px 12px;
   transition: 0.1s all;
-  transition: color 0.20s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 a:hover {
   color: red;

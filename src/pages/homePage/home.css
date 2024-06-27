@@ -1,5 +1,5 @@
-.container .header{
-    height: 20vh;
+.container .header {
+  height: 20vh;
 }
 
 .partners .row .col-3 .partnerCard img {
@@ -16,7 +16,9 @@
 }
 .partners h1 {
   padding: 8px;
-  border-bottom: 3px solid red;
+  font-weight: 700;
+  color: #1e2f97;
+  /* border-bottom: 3px solid #1e2f97; */
 }
 .partners .partnersites .col .card .cardimg {
   width: 230px;

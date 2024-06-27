@@ -2,11 +2,13 @@
   padding: 5rem 0;
   color: white;
   position: relative;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif !important;
 }
 .footer .container {
   position: relative;
   z-index: 2;
-  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
 }
 .footer .overlay {
   background: #000000;

@@ -19,13 +19,28 @@
     "tel": "Tel: +998 95 195-00-55",
     "social": "Ijtimoiy tarqmoqlarimiz"
   },
-  "home":{
+  "home": {
     "partner": "Bizning Hamkorlarimiz",
+    "links": "Foydali havolalar",
     "mygov": "Yagona davlat interaktiv xizmatlari portali",
     "yoshlargov": "Yoshlar ishlari agentligi",
     "uzbmb": "Bilim va malakalarni baholash agentligi",
     "edu": "Oliy ta'lim vazirligi",
     "oak": "Oliy Attestatsiya Komissiyasi"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "text1": "“Research in Adult Learning and Education” (RALE) jurnali hayot davomida ta’lim bilan shug‘ullanuvchi, mehnat bozori talablarini hisobga olgan holda kattalar uchun ta’lim va kasbga o’qitish sifatini ta’minlash bilan shug‘ullanuvchi O‘zbekistonlik va Jahon amaliyotchilari va tadqiqotchilari uchun mo‘ljallangan nashrdir.",
+    "text2": "Biz hayot davomida ta’limni rag‘batlantirish va odamlarning doimiy o‘zgarib borayotgan jamiyatda rivojlanish imkoniyatlarini kengaytirish tarafdorimiz. Biz kattalar ta'limining ahamiyatini odamlarni nafaqat tadqiqot va malakaga asoslangan muhim ko'nikmalar bilan qurollantiradigan, balki shaxsiy o'sish, ijtimoiy inklyuziya va iqtisodiy rivojlanishga yordam beradigan o'zgartiruvchi kuch sifatida tan olamiz..",
+    "text3": "Jurnal kattalarning jamiyat va mehnatdagi ishtirokini rag'batlantirishga qaratilgan formal va noformal ta'lim va ta'limni yoritadi. Jurnalimizning har bir soni quyidagi vas hu kabi sohalarda keng ko‘lamli mavzularni o‘z ichiga oladi:",
+    "list1": "Kasb-hunar ta’limi pedagogikasi va psixologiyasi;",
+    "list2": "Ijtimoiy sheriklikni rivojlantirish;",
+    "list3": "Pedagogik va boshqaruv kadrlarining malakasini oshirish va qayta tayyorlash;",
+    "list4": "Kattalar uchun ta'lim;",
+    "list5": "Ish joyida o'qitish;",
+    "list6": "Kasbiy rivojlanish;",
+    "raleb": "RALEВ butun dunyo bo'ylab kattalar ta'limi va ta'limining barcha jihatlarini o'rgatish va tadbiq etish yo'llarini boshqaradigan tamoyillar va amaliyotlarni konstruktiv muhokama qilish uchun muhit yaratishga intiladi. Shuningdek, u butun dunyo bo'ylab amaliyotchilar va tadqiqotchilar o'rtasida ma'lumot va g'oyalar almashinuvi uchun forumni taqdim etadi.",
+    "text4": "Bilim va o'zgarish uchun biz bilan birga bo'lganlarga rahmat. Keling, kattalar uchun ta'limning qiziqarli sohasini birgalikda o'rganaylik va yanada inklyuziv, adolatli va ma'rifatli jamiyat yaratishga harakat qilaylik.",
+    "text5": "Buyurtmangizni yuboring XXXX yoki + 998 97 776-76-61 orqali biz bilan bog'laning"
   }
-  
 }
