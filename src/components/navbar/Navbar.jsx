@@ -9,9 +9,8 @@ export default function Navbar() {
     <div>
       <nav>
         <div className="container">
-          <div className="nav_logo fs-4">
-            LOGO
-            {/* <img src={logo} alt="" /> */}
+          <div className="nav_logo ">
+            <img src={logo} alt="" />
           </div>
           <div className="nav_link">
             <ul className="d-flex align-items-center gap-3">
