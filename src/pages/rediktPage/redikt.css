@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.rediktWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.cards .card {
+}
+.cards .card .cardImg {
+  width: 100%;
+  overflow: hidden;
+  min-height: 300px;
+}
+.cards .card .cardImg img {
+  size: 100%;
+  width: 100%;
+  size: 50px;
+}
+.cards .card .cardBody {
+  padding: 15px;
+}
+.cards .card .cardBody .title {
+  color: #1e2f97;
+  font-size: 18px;
+}
+.cards .card .cardBody .about {
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 992px) {
+  .rediktWrapper {
+    width: 85%;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rediktWrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rediktWrapper {
+    width: 95%;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
