@@ -20,21 +20,21 @@ export default function Home() {
       <div className="partners">
         <h1 className="text-center">{text.home.partner}</h1>
         <div className="row my-5 justify-content-center">
-          <div className="col-3 d-flex ">
+          <div className="col-12 col-sm-6 justify-content-center   col-md-3 partcard d-flex  ">
             <Link to={"https://mahorat.tech/"}>
               <div className="partnerCard">
                 <img src={partner1} alt="" />
               </div>
             </Link>
           </div>
-          <div className="col-3 d-flex">
+          <div className="col-12 col-sm-6 justify-content-center   col-md-3 partcard d-flex ">
             <Link to={"https://www.uztea.uz/"}>
               <div className="partnerCard">
                 <img src={partner2} alt="" />
               </div>
             </Link>
           </div>
-          <div className="col-3 d-flex">
+          <div className="col-12 col-sm-6 justify-content-center   col-md-3 partcard d-flex ">
             <Link
               to={
                 "https://context.reverso.net/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/goodly"
@@ -45,7 +45,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="col-3 d-flex">
+          <div className="col-12 col-sm-6 justify-content-center   col-md-3 partcard d-flex ">
             <Link to={"https://mahorat.org/"}>
               <div className="partnerCard">
                 <img src={partner4} alt="" />
@@ -54,8 +54,8 @@ export default function Home() {
           </div>
         </div>
         <h1 className="text-center">{text.home.links}</h1>
-        <div className="row partnersites my-4 justify-content-center">
-          <div className="col">
+        <div className=" partnersites my-4 ">
+          <div className="">
             <Link to={"https://my.gov.uz/"}>
               <div className="card">
                 <div className="cardimg">
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="col">
+          <div className="">
             <Link to={"https://yoshlar.gov.uz/"}>
               <div className="card">
                 <div className="cardimg">
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="col">
+          <div className="">
             <Link to={"https://uzbmb.uz/"}>
               <div className="card">
                 <div className="cardimg">
@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="col">
+          <div className="">
             <Link to={"https://edu.uz/uz"}>
               <div className="card">
                 <div className="cardimg">
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="col">
+          <div className="">
             <Link to={"https://oak.uz/"}>
               <div className="card">
                 <div className="cardimg">

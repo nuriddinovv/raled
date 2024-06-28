@@ -24,7 +24,7 @@ export default function Footer() {
     >
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-4 d-none d-md-block">
             <ul>
               <li className="title">{text.footer.title}</li>
               <li>{text.footer.address}</li>
@@ -32,7 +32,7 @@ export default function Footer() {
               <li>{text.footer.address2}</li>
             </ul>
           </div>
-          <div className="col-4">
+          <div className="col-4 d-none d-md-block">
             <ul>
               <li className="title">{text.footer.open}</li>
               <li>{text.footer.week}</li>
@@ -40,8 +40,8 @@ export default function Footer() {
               <li>{text.footer.tel}</li>
             </ul>
           </div>
-          <div className="col-4">
-            <ul>
+          <div className="col-12 col-md-4 ">
+            <ul className="">
               <li className="title">{text.footer.social}</li>
               <div className="icon">
                 <Link to={"https://www.facebook.com/watch/mahoratLC/"}>

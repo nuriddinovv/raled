@@ -1,19 +1,49 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import logo from "../../img/logo.png";
 import { NavLink } from "react-router-dom";
 import { LanguageContext } from "../../context/Context";
 import "./navbar.css";
+
 export default function Navbar() {
   const { text, changeLanguage } = useContext(LanguageContext);
+  const [selectedLanguage, setSelectedLanguage] = useState("uz");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      setSelectedLanguage(storedLanguage);
+      changeLanguage(storedLanguage);
+    }
+  }, [changeLanguage]);
+
+  const handleLanguageChange = (event) => {
+    const newLanguage = event.target.value;
+    changeLanguage(newLanguage);
+    setSelectedLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div>
       <nav>
-        <div className="container">
-          <div className="nav_logo ">
-            <img src={logo} alt="" />
+        <div className="wrapper">
+          <div
+            style={{ transition: "0.3s" }}
+            className="nav_toggle"
+            onClick={toggleMenu}
+          >
+            {menuOpen ? "✖" : "☰"} {/* Toggle button */}
           </div>
-          <div className="nav_link">
-            <ul className="d-flex align-items-center gap-3">
+          <div className="nav_logo">
+            <img src={logo} alt="Logo" />
+          </div>
+          <div className={`nav_link ${menuOpen ? "open" : ""}`}>
+            <ul>
               <li>
                 <NavLink to="/">{text.navbar.home}</NavLink>
               </li>
@@ -37,10 +67,12 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="nav_lang ">
-            <button onClick={() => changeLanguage("uz")}>UZ</button>
-            <button onClick={() => changeLanguage("ru")}>RU</button>
-            <button onClick={() => changeLanguage("en")}>EN</button>
+          <div className="nav_lang">
+            <select onChange={handleLanguageChange} value={selectedLanguage}>
+              <option value="uz">UZ</option>
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+            </select>
           </div>
         </div>
       </nav>

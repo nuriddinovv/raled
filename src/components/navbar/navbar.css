@@ -7,19 +7,32 @@ nav {
   color: #1e2f97;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 12px 0;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 18px;
   background-color: white;
 }
-nav .container {
+nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
-.container .nav_logo {
+.wrapper .nav_toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.wrapper .nav_logo {
   width: 100px;
 }
 .nav_logo img {
   width: 100%;
+}
+.nav_link ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 .nav_link ul li a {
   padding: 8px 12px;
@@ -33,18 +46,66 @@ a.active {
   color: red;
 }
 
-.nav_lang button {
-  background-color: inherit;
+.nav_lang select {
+  border: 1px solid #1e2f97;
   color: #1e2f97;
-  border: none;
-  font-weight: 500;
-  padding: 8px 12px;
-  transition: color 0.25s ease-in-out;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px;
 }
-button:hover {
-  color: red;
+
+@media screen and (max-width: 1200px) {
+  nav {
+    font-size: 16px;
+  }
 }
-.nav_lang button:nth-child(2) {
-  border-right: 1px solid #1e2f97;
-  border-left: 1px solid #1e2f97;
+
+@media screen and (max-width: 992px) {
+  nav {
+    font-size: 14px;
+  }
+  nav .wrapper {
+    width: 95% !important;
+  }
+  .nav_lang select {
+    padding: 4px;
+  }
+  .nav_link ul li a {
+    padding: 8px 6px;
+  }
+  .wrapper .nav_logo {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .nav_toggle {
+    display: block;
+  }
+  .nav_link {
+    font-size: 18px;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    bottom: 0;
+    height: calc(100vh - 78px);
+    background-color: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav_link.open {
+    transform: translateX(0);
+  }
+  .nav_link ul {
+    display: block;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+  }
+  .nav_link ul li {
+    margin: 10px 0;
+  }
+  ul li a {
+    text-align: start;
+    display: block;
+  }
 }

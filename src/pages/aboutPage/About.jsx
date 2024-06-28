@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { LanguageContext } from "../../context/Context";
 import about from "../../img/about1.jpg";
 import raleb from "../../img/raled.jpg";
-
+import './about.css'
 export default function About() {
   const { text } = useContext(LanguageContext);
   return (
@@ -10,11 +10,11 @@ export default function About() {
       <div className="container">
         <h1 className="text-center">{text.about.title}</h1>
         <div className="row align-items-center my-4">
-          <div className="text col-6">
+          <div className="text col-12 col-xl-6">
             <p>{text.about.text1}</p>
             <p>{text.about.text2}</p>
           </div>
-          <div className="col-6">
+          <div className="col-xl-6 col-12">
             <img
               style={{ borderRadius: "5px" }}
               className="w-100  overflow-hidden"
@@ -47,7 +47,7 @@ export default function About() {
           </ul>
         </div>
         <div className="raleb row align-items-center">
-          <div className="col-6">
+          <div className="col-12 col-xl-6">
             <img
               style={{ borderRadius: "5px" }}
               className="w-100"
@@ -55,7 +55,7 @@ export default function About() {
               alt=""
             />
           </div>
-          <div className="col-6">
+          <div className="col-12 col-xl-6">
             <p>{text.about.raleb}</p>
             <p>{text.about.text4}</p>
           </div>

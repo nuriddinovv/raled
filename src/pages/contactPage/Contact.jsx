@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="container">
         <h1 className="text-center my-4">{text.contact.h1}</h1>
         <div className="row justify-content-center align-items-center">
-          <div className="col-5">
+          <div className="col-12 col-xl-6">
             <div>
               <div className="locations">
                 <p>
@@ -40,7 +40,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-5">
+          <div className="col-12 col-xl-6">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.193415524065!2d69.2393715420055!3d41.2774334869973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a8a65339a47%3A0x7be3a713adadc47b!2sSafdosh%20St%2C%20Tashkent%2C%20Uzbekistan!5e1!3m2!1sen!2sus!4v1683196047760!5m2!1sen!2sus"
               width="100%"
