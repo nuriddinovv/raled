@@ -20,6 +20,7 @@
     "social": "Ijtimoiy tarqmoqlarimiz"
   },
   "home": {
+    "headertext": "So'ngi maqolalar",
     "partner": "Bizning Hamkorlarimiz",
     "links": "Foydali havolalar",
     "mygov": "Yagona davlat interaktiv xizmatlari portali",
@@ -101,6 +102,9 @@
     "edittext": "MS Word formatida, Times New Roman, 12 punkt, bir yarim oralig'ida. Chekkalar: chap - 2,5 sm, yuqori, pastki va o'ng - har biri 1,5 sm. Tillar: Ingliz, o‘zbek va/yoki rus tillarida. Jadvallar va chizmalar: MS Word yoki MS Excel formatida. Elektron pochta: academymahorat@gmail.com"
   },
   "books": {
-    "title": "Barcha maqolalar"
+    "title": "Barcha maqolalar",
+    "viewMore": "Ko'proq ko'rish",
+    "noResults": "Ma'umotlar topilmadi :-(",
+    "searchPlaceholder": "Qidirish..."
   }
 }

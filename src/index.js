@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashboardLayout from "./layout/DashboardLayout";
 import "./index.css";
+import "aos/dist/aos.css";
 // PAGES
 import Home from "./pages/homePage/Home";
 import About from "./pages/aboutPage/About";
@@ -13,6 +14,7 @@ import Books from "./pages/booksPage/Books";
 import Send from "./pages/sendPage/Send";
 import Contact from "./pages/contactPage/Contact";
 import Arxiv from "./pages/arxivPage/Arxiv";
+import SelectedBook from "./pages/selectedBookPage/SelectedBook";
 
 ReactDOM.render(
   <LanguageProvider>
@@ -23,6 +25,8 @@ ReactDOM.render(
           <Route path="about" element={<About />} />
           <Route path="redikt" element={<Redikt />} />
           <Route path="books" element={<Books />} />
+          <Route path="books/:id" element={<SelectedBook />} />
+
           <Route path="send" element={<Send />} />
           <Route path="contact" element={<Contact />} />
           <Route path="arxiv" element={<Arxiv />} />

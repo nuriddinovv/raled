@@ -20,6 +20,7 @@
     "social": "Social Medias"
   },
   "home": {
+    "headertext": "Recent Articles",
     "partner": "Our Partners",
     "links": "Useful links",
     "mygov": "Unified state interactive services portal",
@@ -101,6 +102,9 @@
     "edittext": "In MS Word format, Times New Roman, 12-point size, with one and a half spacing. Margins: left - 2.5 cm, top, bottom, and right - 1.5 cm each. Languages: English, Uzbek, and/or Russian. Tables and charts: in MS Word or MS Excel format. Email: academymahorat@gmail.com"
   },
   "books": {
-    "title": "All Articles"
+    "title": "All Articles",
+    "viewMore": "View More",
+    "noResults": "No results found :-(",
+    "searchPlaceholder": "Search..."
   }
 }
