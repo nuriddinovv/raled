@@ -73,5 +73,34 @@
     "about7": "Chair, Department of Teacher Education, Visiting Professor Educational Technology at Webster University in Tashkent",
     "about8": "PhD student at the university of Aberdeen, UK. Coordinator of Master's Programs in Education and Innovation, Webster University in Tashkent. Assistant Professor of Design Thinking",
     "about9": "PhD, Senior Lecturer at Yeoju Technical Institute in Tashkent "
+  },
+  "send": {
+    "title": "Submission of materials:",
+    "text1": "Authors should ensure that their submissions comply with the following requirements. Non-compliant submissions may be returned.",
+    "requirements": "General requirements:",
+    "reqlist1": "Must be in Microsoft Word format.",
+    "reqlist2": "Typed in Times New Roman font, 14-point size, with 1.5 line spacing.",
+    "reqlist3": "Margins should be 2 centimeters on all sides.",
+    "reqlist4": "Minimum length: 5 pages.",
+    "reqlist5": "Must reference at least 3 sources.",
+    "sources": "List of sources:",
+    "sourcestext": "Sources should be listed in the following order: [1], [2], [3]: author's surname, book title, publisher's address, year, pages.",
+    "sourcesstructure": "Structure:",
+    "sourceslist1": "Title",
+    "sourceslist2": "Authors and their affiliations",
+    "sourceslist3": "Abstract",
+    "sourceslist4": "Keywords",
+    "sourceslist5": "Introduction",
+    "sourceslist6": "Main body",
+    "sourceslist7": "Conclusion",
+    "sourceslist8": "References",
+    "sourceslist9": "Author information",
+    "addreq": "Additional requirements:",
+    "addreqtext": "If the article is in Russian or Uzbek, the above information must be provided in a separate file in English. Title: The English title of the article. Author information: surname, first name, full name of the organization and postal address, email address. Abstract: In Russian and English, 150-250 words. Keywords: In English, 6-10 words or phrases. Introduction: Research objective and hypothesis. Main body: Methods, results, and discussion. Conclusion: A brief summary of the research results, should not exceed 10% of the total text. References: In Harvard style, at least 15 sources, sources should be cited in the text in square brackets (e.g., [2], [4; 5]).",
+    "edit": "Formatting and submission:",
+    "edittext": "In MS Word format, Times New Roman, 12-point size, with one and a half spacing. Margins: left - 2.5 cm, top, bottom, and right - 1.5 cm each. Languages: English, Uzbek, and/or Russian. Tables and charts: in MS Word or MS Excel format. Email: academymahorat@gmail.com"
+  },
+  "books": {
+    "title": "All Articles"
   }
 }

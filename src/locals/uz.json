@@ -73,5 +73,34 @@
     "about7": "Toshkentdagi Webster universiteti o'qituvchilar malakasini oshirish kafedrasi mudiri, Webster universiteti ta'lim texnologiyalari professori.",
     "about8": "Buyuk Britaniyaning Aberdeen universitetida PhD tadqiqotchi. Toshkentdagi Webster universitetining Taʼlim va innovatsiyalar boʻyicha magistratura dasturlari koordinatori. “Dizayn fikrlash” kursida oʻrgatuvchi assistent professor.",
     "about9": "PhD, Toshkentdagi Yeoju texnika instituti katta o‘qituvchisi"
+  },
+  "send": {
+    "title": "Material yuborish:",
+    "text1": "Mualliflar materiallarini jo'natishdan oldin quyidagi talablarga muvofiqligini tekshirishlari kerak. Agar talablar bajarilmasa, materiallar qaytarilishi mumkin.",
+    "requirements": "Umumiy talablar:",
+    "reqlist1": "Microsoft Word formatida bo'lishi kerak.",
+    "reqlist2": "Times New Roman shriftida, 14-punkt, 1,5 qator oralig'ida yozilishi kerak.",
+    "reqlist3": "Har bir chet 2 santimetr bo'lishi kerak.",
+    "reqlist4": "Minimal hajm: 5 sahifa",
+    "reqlist5": "Kamida 3 ta manbaga havola bo'lishi kerak.",
+    "sources": "Manbalar ro'yxati:",
+    "sourcestext": "Manbalar [1], [2], [3] tartibida ko'rsatilishi kerak: muallif familiyasi, kitob nomi, nashriyot manzili, yil, sahifalar.",
+    "sourcesstructure": "Tuzilishi:",
+    "sourceslist1": "Ismi",
+    "sourceslist2": "Mualliflar va ularning mansubligi",
+    "sourceslist3": "Izoh",
+    "sourceslist4": "Kalit so'zlar",
+    "sourceslist5": "Kirish",
+    "sourceslist6": "Asosiy qism",
+    "sourceslist7": "Xulosa",
+    "sourceslist8": "Adabiyot",
+    "sourceslist9": "Mualliflar haqida ma'lumot",
+    "addreq": "Qo'shimcha talablar:",
+    "addreqtext": "Agar maqola rus yoki o‘zbek tillarida bo‘lsa, yuqoridagi ma’lumotlar ingliz tilida alohida faylda ilova qilinishi kerak. Ismi: Maqolaning ingliz tilidagi sarlavhasi. Mualliflar haqida ma'lumot: familiya, ismi, tashkilotning to'liq nomi va pochta manzili, elektron pochta manzili. Izoh: Rus va ingliz tillarida, 150-250 so'z. Kalit so'zlar: Ingliz tilida, 6-10 ta so'z yoki ibora. Kirish: Tadqiqot maqsadi va gipotezasi. Asosiy qism: Usullar, natijalar va muhokama. Xulosa: Tadqiqot natijalarining qisqacha umumlashtirilishi, hajmi maqola umumiy matnining 10% dan oshmasligi kerak. Adabiyot: Garvard uslubida, kamida 15 ta manba, manbalar matnda kvadrat qavslar ichida ko'rsatilishi kerak (masalan, [2], [4; 5]).",
+    "edit": "Format va topshirish:",
+    "edittext": "MS Word formatida, Times New Roman, 12 punkt, bir yarim oralig'ida. Chekkalar: chap - 2,5 sm, yuqori, pastki va o'ng - har biri 1,5 sm. Tillar: Ingliz, o‘zbek va/yoki rus tillarida. Jadvallar va chizmalar: MS Word yoki MS Excel formatida. Elektron pochta: academymahorat@gmail.com"
+  },
+  "books": {
+    "title": "Barcha maqolalar"
   }
 }
