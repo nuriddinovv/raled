@@ -24,9 +24,8 @@ ReactDOM.render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="redikt" element={<Redikt />} />
-          <Route path="books" element={<Books />} />
-          <Route path="books/:id" element={<SelectedBook />} />
-
+          <Route path="book" element={<Books />} />
+          <Route path="book/:id" element={<SelectedBook />} />
           <Route path="send" element={<Send />} />
           <Route path="contact" element={<Contact />} />
           <Route path="arxiv" element={<Arxiv />} />

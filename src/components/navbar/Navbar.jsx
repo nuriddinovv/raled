@@ -54,7 +54,7 @@ export default function Navbar() {
                 <NavLink to="/redikt">{text.navbar.redikt}</NavLink>
               </li>
               <li>
-                <NavLink to="/books">{text.navbar.books}</NavLink>
+                <NavLink to="/book">{text.navbar.books}</NavLink>
               </li>
               <li>
                 <NavLink to="/send">{text.navbar.send}</NavLink>
