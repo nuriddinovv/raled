@@ -102,7 +102,9 @@ export default function Books() {
               </div>
             ))
           ) : (
-            <p>{text.books.noResults}</p>
+            <p style={{ display: "flex", justifyContent:'center' }} >
+              {text.books.noResults}
+            </p>
           )}
         </div>
       </div>
