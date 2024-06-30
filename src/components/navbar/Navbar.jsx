@@ -29,7 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div style={{position:"relative"}}>
       <nav>
         <div className="wrapper">
           <div

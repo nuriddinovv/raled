@@ -2,8 +2,6 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 5;
   color: #1e2f97;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -87,14 +85,15 @@ a.active {
     position: absolute;
     top: 78px;
     left: 0;
+    z-index: 88;
     bottom: 0;
     height: calc(100vh - 78px);
     background-color: #ffffff;
-    transform: translateX(-100%);
+    display: none;
     transition: transform 0.3s ease-in-out;
   }
   .nav_link.open {
-    transform: translateX(0);
+    display: block;
   }
   .nav_link ul {
     display: block;

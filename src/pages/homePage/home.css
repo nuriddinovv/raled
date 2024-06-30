@@ -15,7 +15,7 @@
   padding: 10px;
 }
 .partners .partnersites {
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;

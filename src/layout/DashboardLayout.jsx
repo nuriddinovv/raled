@@ -7,7 +7,9 @@ export default function DashboardLayout() {
     <div>
       <Navbar />
       <div style={{ height: "92.24px" }}></div>
-      <Outlet />
+      <div style={{ position: "relative", overflow: "hidden" }}>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
