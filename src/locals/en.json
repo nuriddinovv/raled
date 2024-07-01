@@ -20,7 +20,6 @@
     "social": "Social Medias"
   },
   "home": {
-    
     "headertext": "Recent Articles",
     "partner": "Our Partners",
     "links": "Useful links",
@@ -100,7 +99,8 @@
     "addreq": "Additional requirements:",
     "addreqtext": "If the article is in Russian or Uzbek, the above information must be provided in a separate file in English. Title: The English title of the article. Author information: surname, first name, full name of the organization and postal address, email address. Abstract: In Russian and English, 150-250 words. Keywords: In English, 6-10 words or phrases. Introduction: Research objective and hypothesis. Main body: Methods, results, and discussion. Conclusion: A brief summary of the research results, should not exceed 10% of the total text. References: In Harvard style, at least 15 sources, sources should be cited in the text in square brackets (e.g., [2], [4; 5]).",
     "edit": "Formatting and submission:",
-    "edittext": "In MS Word format, Times New Roman, 12-point size, with one and a half spacing. Margins: left - 2.5 cm, top, bottom, and right - 1.5 cm each. Languages: English, Uzbek, and/or Russian. Tables and charts: in MS Word or MS Excel format. Email: academymahorat@gmail.com"
+    "edittext": "In MS Word format, Times New Roman, 12-point size, with one and a half spacing. Margins: left - 2.5 cm, top, bottom, and right - 1.5 cm each. Languages: English, Uzbek, and/or Russian. Tables and charts: in MS Word or MS Excel format. Email: ",
+    "editMail": "academymahorat@gmail.com"
   },
   "books": {
     "title": "All Articles",

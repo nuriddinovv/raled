@@ -27,9 +27,11 @@ export default function Footer() {
           <div className="col-4 d-none footerLinks d-md-block">
             <ul>
               <li className="title">{text.footer.title}</li>
-              <li>{text.footer.address}</li>
-              <li>{text.footer.address1}</li>
-              <li>{text.footer.address2}</li>
+              <Link to={"https://maps.app.goo.gl/PzECvTKSyPtgWBhh8"}>
+                <li>{text.footer.address}</li>
+                <li>{text.footer.address1}</li>
+                <li>{text.footer.address2}</li>
+              </Link>
             </ul>
           </div>
           <div className="col-4 d-none d-md-block">

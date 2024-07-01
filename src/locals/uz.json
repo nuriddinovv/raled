@@ -99,7 +99,8 @@
     "addreq": "Qo'shimcha talablar:",
     "addreqtext": "Agar maqola rus yoki o‘zbek tillarida bo‘lsa, yuqoridagi ma’lumotlar ingliz tilida alohida faylda ilova qilinishi kerak. Ismi: Maqolaning ingliz tilidagi sarlavhasi. Mualliflar haqida ma'lumot: familiya, ismi, tashkilotning to'liq nomi va pochta manzili, elektron pochta manzili. Izoh: Rus va ingliz tillarida, 150-250 so'z. Kalit so'zlar: Ingliz tilida, 6-10 ta so'z yoki ibora. Kirish: Tadqiqot maqsadi va gipotezasi. Asosiy qism: Usullar, natijalar va muhokama. Xulosa: Tadqiqot natijalarining qisqacha umumlashtirilishi, hajmi maqola umumiy matnining 10% dan oshmasligi kerak. Adabiyot: Garvard uslubida, kamida 15 ta manba, manbalar matnda kvadrat qavslar ichida ko'rsatilishi kerak (masalan, [2], [4; 5]).",
     "edit": "Format va topshirish:",
-    "edittext": "MS Word formatida, Times New Roman, 12 punkt, bir yarim oralig'ida. Chekkalar: chap - 2,5 sm, yuqori, pastki va o'ng - har biri 1,5 sm. Tillar: Ingliz, o‘zbek va/yoki rus tillarida. Jadvallar va chizmalar: MS Word yoki MS Excel formatida. Elektron pochta: academymahorat@gmail.com"
+    "edittext": "MS Word formatida, Times New Roman, 12 punkt, bir yarim oralig'ida. Chekkalar: chap - 2,5 sm, yuqori, pastki va o'ng - har biri 1,5 sm. Tillar: Ingliz, o‘zbek va/yoki rus tillarida. Jadvallar va chizmalar: MS Word yoki MS Excel formatida. Elektron pochta: ",
+    "editMail": "academymahorat@gmail.com"
   },
   "books": {
     "title": "Barcha maqolalar",

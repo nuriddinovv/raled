@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { LanguageContext } from "../../context/Context";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 export default function Send() {
   const { text } = useContext(LanguageContext);
   useEffect(() => {
@@ -80,7 +81,12 @@ export default function Send() {
         <h1 data-aos="fade-right" className="fs-2 p-0 py-2 ">
           {text.send.edit}
         </h1>
-        <p data-aos="fade-right">{text.send.edittext}</p>
+        <p data-aos="fade-right">
+          {text.send.edittext}
+          <Link to={"mailto:academymahorat@gmail.com"}>
+            {text.send.editMail}
+          </Link>
+        </p>
       </div>
     </div>
   );

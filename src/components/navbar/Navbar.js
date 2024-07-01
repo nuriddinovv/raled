@@ -29,15 +29,11 @@ export default function Navbar() {
   };
 
   return (
-    <div style={{position:"relative"}}>
+    <div style={{ position: "relative" }}>
       <nav>
-        <div className="wrapper">
-          <div
-            style={{ transition: "0.3s" }}
-            className="nav_toggle"
-            onClick={toggleMenu}
-          >
-            {menuOpen ? "✖" : "☰"} {/* Toggle button */}
+        <div className="wrapper" style={{ transition: "0.3s" }}>
+          <div className="nav_toggle" onClick={toggleMenu}>
+            {menuOpen ? "✖" : "☰"} 
           </div>
           <div className="nav_logo">
             <img src={logo} alt="Logo" />

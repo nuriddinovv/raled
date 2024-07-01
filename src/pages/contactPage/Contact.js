@@ -30,7 +30,7 @@ export default function Contact() {
               <div className="locations">
                 <p>
                   <FontAwesomeIcon icon={faLocationDot} />
-                  <Link to="">
+                  <Link to="https://maps.app.goo.gl/PzECvTKSyPtgWBhh8">
                     {text.contact.address} {text.contact.address2}
                   </Link>
                 </p>
