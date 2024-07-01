@@ -24,7 +24,7 @@ export default function Footer() {
     >
       <div className="container">
         <div className="row">
-          <div className="col-4 d-none d-md-block">
+          <div className="col-4 d-none footerLinks d-md-block">
             <ul>
               <li className="title">{text.footer.title}</li>
               <li>{text.footer.address}</li>
@@ -37,7 +37,9 @@ export default function Footer() {
               <li className="title">{text.footer.open}</li>
               <li>{text.footer.week}</li>
               <li>{text.footer.hour}</li>
-              <li>{text.footer.tel}</li>
+              <li>
+                <Link to={"tel:+998951950055"}>{text.footer.tel}</Link>
+              </li>
             </ul>
           </div>
           <div className="col-12 col-md-4 ">

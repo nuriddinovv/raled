@@ -40,10 +40,10 @@ nav .wrapper {
   transition: 0.1s all;
   transition: color 0.2s ease-in-out;
 }
-a:hover {
+.nav_link ul li a:hover {
   color: red;
 }
-a.active {
+.nav_link ul li a.active {
   color: red;
 }
 

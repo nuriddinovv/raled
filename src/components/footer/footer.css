@@ -8,7 +8,9 @@
 .footer .container {
   position: relative;
   z-index: 2;
-  /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+}
+.footer .container .row .footerLinks li {
+  cursor: pointer;
 }
 .footer .overlay {
   background: #000000;
