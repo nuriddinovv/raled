@@ -15,11 +15,13 @@ import Send from "./pages/sendPage/Send";
 import Contact from "./pages/contactPage/Contact";
 import Arxiv from "./pages/arxivPage/Arxiv";
 import SelectedBook from "./pages/selectedBookPage/SelectedBook";
+import NotFound from "./pages/notFoundPage/NotFound";
 
 ReactDOM.render(
   <LanguageProvider>
     <Router>
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route element={<DashboardLayout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
