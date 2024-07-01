@@ -107,5 +107,8 @@
     "viewMore": "View More",
     "noResults": "No results found :-(",
     "searchPlaceholder": "Search..."
+  },
+  "selectedBook": {
+    "download": "Download"
   }
 }

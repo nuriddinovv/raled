@@ -108,5 +108,8 @@
     "viewMore": "Посмотреть больше",
     "noResults": "Pезультатов не найдено :-(",
     "searchPlaceholder": "Поиск..."
+  },
+  "selectedBook": {
+    "download": "Скачать"
   }
 }

@@ -107,5 +107,8 @@
     "viewMore": "Ko'proq ko'rish",
     "noResults": "Ma'umotlar topilmadi :-(",
     "searchPlaceholder": "Qidirish..."
+  },
+  "selectedBook": {
+    "download": "Yuklab olish"
   }
 }
