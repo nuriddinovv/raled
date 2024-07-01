@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-4 ">
+          <div className="col-12 col-md-4 d-flex justify-content-center d-md-block text-md-start">
             <ul className="">
               <li className="title">{text.footer.social}</li>
               <div className="icon">
