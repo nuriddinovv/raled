@@ -8,6 +8,7 @@ import { LanguageContext } from "../../context/Context";
 import { SpinnerCircular } from "spinners-react";
 import { convertDate } from "../../repository/dataConvert";
 import { Pagination } from "antd";
+
 export default function Books() {
   const [bookData, setBookData] = useState([]);
   const [search, setSearch] = useState("");
@@ -25,8 +26,7 @@ export default function Books() {
     try {
       const response = await axios.get(url, {
         headers: { "Content-Type": "application/json" },
-        method: "GET",
-        credentials: "include",
+        withCredentials: true,
       });
       if (response.status !== 200) {
         throw new Error(`Response status: ${response.status}`);
@@ -38,8 +38,8 @@ export default function Books() {
     }
   }
 
-  const handlePageClick = ({ selected }) => {
-    setPageNumber(selected);
+  const handlePageClick = (page) => {
+    setPageNumber(page - 1); // Ant Design Pagination 1-dan boshlanadi
   };
 
   const pageCount = Math.ceil(bookData.length / booksPerPage);
