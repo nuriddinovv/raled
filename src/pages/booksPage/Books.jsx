@@ -23,7 +23,11 @@ export default function Books() {
   async function getData() {
     const url = "http://127.0.0.1:8000/api/product";
     try {
-      const response = await axios.get(url);
+      const response = await axios.get(url, {
+        headers: { "Content-Type": "application/json" },
+        method: "GET",
+        credentials: "include",
+      });
       if (response.status !== 200) {
         throw new Error(`Response status: ${response.status}`);
       }
