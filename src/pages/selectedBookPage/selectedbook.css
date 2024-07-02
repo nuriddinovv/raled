@@ -1,0 +1,18 @@
+.container .selectedCardWrapper .selectedCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 1200px) {
+  .container .selectedCardWrapper .selectedCard {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container .selectedCardWrapper .selectedCard .card-body .download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .selectedCardWrapper .selectedCard .card-body .download button {
+    width: 70%;
+  }
+}
