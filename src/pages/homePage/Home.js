@@ -9,74 +9,123 @@ import yia from "../../img/yia_logo.png";
 import uzbmb from "../../img/uzbmb.jpg";
 import otv from "../../img/otv.jpg";
 import oak from "../../img/oak.png";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
+import { SpinnerCircular } from "spinners-react";
+import { convertDate } from "../../repository/dataConvert";
+
 export default function Home() {
   const { text } = useContext(LanguageContext);
+  const [loader, setLoader] = useState(true);
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
+  async function getData() {
+    const url = "http://127.0.0.1:8000/api/product";
+    try {
+      const response = await axios.get(url);
+      if (response.status !== 200) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+      const fetchedData = response.data;
+      setData(fetchedData);
+
+      // Filtering the data here after it is fetched
+      const filterdata = fetchedData.filter((item) => item.best);
+      setFilteredData(filterdata);
+
+      setLoader(false);
+    } catch (error) {
+      console.error(error.message);
+      setLoader(false);
+    }
+  }
+
   useEffect(() => {
+    getData();
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
     });
-  }, []);
+  }, []); // Empty dependency array to run only once
+
+  if (loader) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "50vh",
+        }}
+        className="loader-container"
+      >
+        <SpinnerCircular
+          size={100}
+          thickness={100}
+          speed={100}
+          color="#1e2f97"
+          secondaryColor="rgba(0, 0, 0, 0.3)"
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="container py-3">
-      <div className="header">
         <h1 data-aos="fade-down" className="text-center">
           {text.home.headertext}
         </h1>
+      <div className="header">
+        <div className="headercard">
+          {filteredData.length > 0 ? (
+            filteredData.map((item) => (
+              <div key={item.id} className="card" data-aos="fade-up">
+                <div
+                  className="card-img-top"
+                  style={{
+                    backgroundImage: `url(${item.thumb})`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    height: "200px",
+                  }}
+                ></div>
+                <div className="card-body">
+                  <h4 style={{ fontWeight: "700" }}>{item.name}</h4>
+                  <p style={{ fontSize: "16px" }}>{convertDate(item.date)}</p>
+                  <button>
+                    <Link to={`/book/${item.id}`}>{text.books.viewMore} →</Link>
+                  </button>
+                </div>
+              </div>
+            ))
+          ) : (
+            <div>{text.noResults}</div>
+          )}
+        </div>
       </div>
       <div className="partners">
         <h1 data-aos="fade-right" className="text-center">
           {text.home.partner}
         </h1>
         <div className="row my-5 justify-content-center">
-          <div
-            data-aos="zoom-in-right"
-            className="col-12 col-sm-6 justify-content-center col-md-3 partcard d-flex  "
-          >
-            <Link to={"https://mahorat.tech/"}>
-              <div className="partnerCard">
-                <img src={partner1} alt="" />
-              </div>
-            </Link>
-          </div>
-          <div
-            data-aos="zoom-in-right"
-            className="col-12 col-sm-6 justify-content-center col-md-3 partcard d-flex "
-          >
-            <Link to={"https://www.uztea.uz/"}>
-              <div className="partnerCard">
-                <img src={partner2} alt="" />
-              </div>
-            </Link>
-          </div>
-          <div
-            data-aos="zoom-in-left"
-            className="col-12 col-sm-6 justify-content-center col-md-3 partcard d-flex "
-          >
-            <Link
-              to={
-                "https://context.reverso.net/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/goodly"
-              }
+          {[partner1, partner2, partner3, partner4].map((partner, index) => (
+            <div
+              key={index}
+              data-aos={index % 2 === 0 ? "zoom-in-right" : "zoom-in-left"}
+              className="col-12 col-sm-6 justify-content-center col-md-3 partcard d-flex"
             >
-              <div className="partnerCard">
-                <img src={partner3} alt="" />
-              </div>
-            </Link>
-          </div>
-          <div
-            data-aos="zoom-in-left"
-            className="col-12 col-sm-6 justify-content-center col-md-3 partcard d-flex "
-          >
-            <Link to={"https://mahorat.org/"}>
-              <div className="partnerCard">
-                <img src={partner4} alt="" />
-              </div>
-            </Link>
-          </div>
+              <Link to="#">
+                <div className="partnerCard">
+                  <img src={partner} alt={`Partner ${index + 1}`} />
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
         <h1
           data-aos="fade-right"
@@ -85,59 +134,30 @@ export default function Home() {
         >
           {text.home.links}
         </h1>
-        <div className=" partnersites my-4 ">
-          <div className="">
-            <Link to={"https://my.gov.uz/"}>
-              <div data-aos="fade-up-right" className="card">
-                <div className="cardimg">
-                  <img src={mygov} alt="" />
+        <div className="partnersites my-4">
+          {[mygov, yia, uzbmb, otv, oak].map((site, index) => (
+            <div key={index} className="">
+              <Link to="#">
+                <div
+                  data-aos={
+                    index === 0 || index === 1
+                      ? "fade-up-right"
+                      : index === 2
+                      ? "zoom-in"
+                      : "fade-up-left"
+                  }
+                  className="card"
+                >
+                  <div className="cardimg">
+                    <img src={site} alt={`Site ${index + 1}`} />
+                  </div>
+                  <div className="card-body text-center">
+                    {text.home[`site${index + 1}`]}
+                  </div>
                 </div>
-                <div className="card-body text-center">{text.home.mygov}</div>
-              </div>
-            </Link>
-          </div>
-          <div className="">
-            <Link to={"https://yoshlar.gov.uz/"}>
-              <div data-aos="fade-up-right" className="card">
-                <div className="cardimg">
-                  <img src={yia} alt="" />
-                </div>
-                <div className="card-body text-center">
-                  {text.home.yoshlargov}
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="">
-            <Link to={"https://uzbmb.uz/"}>
-              <div data-aos="zoom-in" className="card">
-                <div className="cardimg">
-                  <img src={uzbmb} alt="" />
-                </div>
-                <div className="card-body text-center">{text.home.uzbmb}</div>
-              </div>
-            </Link>
-          </div>
-          <div className="">
-            <Link to={"https://edu.uz/uz"}>
-              <div data-aos="fade-up-left" className="card">
-                <div className="cardimg">
-                  <img src={otv} alt="" />
-                </div>
-                <div className="card-body text-center">{text.home.edu}</div>
-              </div>
-            </Link>
-          </div>
-          <div className="">
-            <Link to={"https://oak.uz/"}>
-              <div data-aos="fade-up-left" className="card">
-                <div className="cardimg">
-                  <img src={oak} alt="" />
-                </div>
-                <div className="card-body text-center">{text.home.oak}</div>
-              </div>
-            </Link>
-          </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </div>

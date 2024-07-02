@@ -36,7 +36,7 @@ export default function Books() {
   }
 
   const handlePageClick = (page) => {
-    setPageNumber(page - 1); // Ant Design Pagination 1-dan boshlanadi
+    setPageNumber(page - 1); 
   };
 
   const pageCount = Math.ceil(bookData.length / booksPerPage);

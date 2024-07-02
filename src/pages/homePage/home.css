@@ -1,4 +1,4 @@
-.container .header {
+.container .container {
   height: 40vh;
 }
 
@@ -71,5 +71,50 @@
   .partners .partnersites .card .cardimg {
     width: 240px;
   }
-  
+}
+.container .header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  min-height: 200px;
+}
+.container .header .headercard .card-img-top {
+  min-height: 300px;
+}
+.container .header .headercard .card-body button {
+  background-color: white;
+  width: 100%;
+  cursor: auto;
+  text-align: end;
+  border: none;
+}
+.container .header .headercard {
+  transition: 0.3s;
+}
+.container .header .headercard:hover {
+  scale: 1.05;
+}
+.container .header .headercard .card-body button a {
+  transition: 0.3s;
+  font-weight: 600;
+  border-radius: 16px;
+  border: 1px solid #1e2f97;
+  color: #1e2f97;
+  padding: 8px;
+  margin: 0;
+}
+.container .header .headercard .card-body button a:hover {
+  background-color: #1e2f97;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .container .header {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .header {
+    grid-template-columns: 1fr;
+  }
 }
