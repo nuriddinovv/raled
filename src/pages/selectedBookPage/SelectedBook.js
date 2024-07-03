@@ -36,6 +36,7 @@ export default function SelectedBook() {
     <div className="container selectedPage my-4">
       {selectedBook ? (
         <div
+          style={{ minHeight: "50vh" }}
           data-aos="fade-up"
           className="d-flex selectedCardWrapper justify-content-center"
         >
