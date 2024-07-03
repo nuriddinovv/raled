@@ -50,11 +50,11 @@ export default function SelectedBook() {
             <div className="card-body ">
               <h1 className="text-center">{selectedBook.name}</h1>
               <p>{convertDate(selectedBook.date)}</p>
-                {lang === "uz"
-                  ? selectedBook.description_uz
-                  : lang === "en"
-                  ? selectedBook.description_en
-                  : selectedBook.description_ru}
+              {lang === "uz"
+                ? selectedBook.description_uz
+                : lang === "en"
+                ? selectedBook.description_en
+                : selectedBook.description_ru}
               <div className="download">
                 <button
                   onClick={() => {
@@ -69,7 +69,9 @@ export default function SelectedBook() {
           </div>
         </div>
       ) : (
-        <p className="text-center">Loading...</p>
+        <p style={{ minHeight: "50vh" }} className="text-center">
+          Loading...
+        </p>
       )}
     </div>
   );
