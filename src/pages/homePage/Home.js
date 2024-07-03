@@ -132,29 +132,48 @@ export default function Home() {
           {text.home.links}
         </h1>
         <div className="partnersites my-4">
-          {[mygov, yia, uzbmb, otv, oak].map((site, index) => (
-            <div key={index} className="">
-              <Link to="#">
-                <div
-                  data-aos={
-                    index === 0 || index === 1
-                      ? "fade-up-right"
-                      : index === 2
-                      ? "zoom-in"
-                      : "fade-up-left"
-                  }
-                  className="card"
-                >
-                  <div className="cardimg">
-                    <img src={site} alt={`Site ${index + 1}`} />
-                  </div>
-                  <div className="card-body text-center">
-                    {text.home[`site${index + 1}`]}
-                  </div>
-                </div>
-              </Link>
+          <Link to="https://my.gov.uz/ru">
+            <div data-aos="fade-up-right" className="card">
+              <div className="cardimg">
+                <img src={mygov} alt="" />
+              </div>
+              <div className="card-body text-center">{text.home.mygov}</div>
             </div>
-          ))}
+          </Link>
+          <Link to="https://yoshlar.gov.uz/">
+            <div data-aos="fade-up-right" className="card">
+              <div className="cardimg">
+                <img src={yia} alt="" />
+              </div>
+              <div className="card-body text-center">
+                {text.home.yoshlargov}
+              </div>
+            </div>
+          </Link>
+          <Link to="https://uzbmb.uz/">
+            <div data-aos="zoom-in" className="card">
+              <div className="cardimg">
+                <img src={uzbmb} alt="" />
+              </div>
+              <div className="card-body text-center">{text.home.uzbmb}</div>
+            </div>
+          </Link>
+          <Link to="https://edu.uz/">
+            <div data-aos="fade-up-left" className="card">
+              <div className="cardimg">
+                <img src={otv} alt="" />
+              </div>
+              <div className="card-body text-center">{text.home.edu}</div>
+            </div>
+          </Link>
+          <Link to="https://edu.uz/">
+            <div data-aos="fade-up-left" className="card">
+              <div className="cardimg">
+                <img src={oak} alt="" />
+              </div>
+              <div className="card-body text-center">{text.home.oak}</div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
