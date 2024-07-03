@@ -22,7 +22,7 @@ export default function Books() {
   }, []);
 
   async function getData() {
-    const url = "http://127.0.0.1:8000/api/product";
+    const url = "https://raled.org/api/product/";
     try {
       const response = await axios.get(url);
       if (response.status !== 200) {

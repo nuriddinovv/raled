@@ -16,9 +16,10 @@ export default function SelectedBook() {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/product/${id}`)
+      .get(`https://raled.org/api/product/${id}`)
       .then((result) => {
         setSelectedBook(result.data);
+        console.log(result.data);
       })
       .catch((err) => {
         console.log(err);
@@ -32,7 +33,7 @@ export default function SelectedBook() {
   }, [id]);
 
   return (
-    <div className="container my-4">
+    <div className="container selectedPage my-4">
       {selectedBook ? (
         <div
           data-aos="fade-up"
@@ -42,22 +43,18 @@ export default function SelectedBook() {
             <div className="selectedCardImg d-flex justify-content-center align-items-center">
               <img
                 src={selectedBook.thumb}
-                style={{ borderRadius: "8px", width: "70%" }}
+                style={{ borderRadius: "8px", width: "100%" }}
                 alt=""
               />
             </div>
             <div className="card-body ">
               <h1 className="text-center">{selectedBook.name}</h1>
               <p>{convertDate(selectedBook.date)}</p>
-              <p>
-                <i>
-                  {lang === "uz"
-                    ? selectedBook.description_uz
-                    : lang === "en"
-                    ? selectedBook.description_en
-                    : selectedBook.description_ru}
-                </i>
-              </p>
+                {lang === "uz"
+                  ? selectedBook.description_uz
+                  : lang === "en"
+                  ? selectedBook.description_en
+                  : selectedBook.description_ru}
               <div className="download">
                 <button
                   onClick={() => {

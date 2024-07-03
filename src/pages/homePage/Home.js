@@ -24,7 +24,7 @@ export default function Home() {
   const [filteredData, setFilteredData] = useState([]);
 
   async function getData() {
-    const url = "http://127.0.0.1:8000/api/product";
+    const url = "https://raled.org/api/product/";
     try {
       const response = await axios.get(url);
       if (response.status !== 200) {
@@ -33,7 +33,6 @@ export default function Home() {
       const fetchedData = response.data;
       setData(fetchedData);
 
-      // Filtering the data here after it is fetched
       const filterdata = fetchedData.filter((item) => item.best);
       setFilteredData(filterdata);
 
@@ -50,7 +49,7 @@ export default function Home() {
       duration: 1000,
       easing: "ease-in-out",
     });
-  }, []); // Empty dependency array to run only once
+  }, []);
 
   if (loader) {
     return (
@@ -76,37 +75,35 @@ export default function Home() {
 
   return (
     <div className="container py-3">
-        <h1 data-aos="fade-down" className="text-center">
-          {text.home.headertext}
-        </h1>
+      <h1 data-aos="fade-down" className="text-center">
+        {text.home.headertext}
+      </h1>
       <div className="header">
-        <div className="headercard">
-          {filteredData.length > 0 ? (
-            filteredData.map((item) => (
-              <div key={item.id} className="card" data-aos="fade-up">
-                <div
-                  className="card-img-top"
-                  style={{
-                    backgroundImage: `url(${item.thumb})`,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    height: "200px",
-                  }}
-                ></div>
-                <div className="card-body">
-                  <h4 style={{ fontWeight: "700" }}>{item.name}</h4>
-                  <p style={{ fontSize: "16px" }}>{convertDate(item.date)}</p>
-                  <button>
-                    <Link to={`/book/${item.id}`}>{text.books.viewMore} →</Link>
-                  </button>
-                </div>
+        {filteredData.length > 0 ? (
+          filteredData.map((item) => (
+            <div key={item.id} className="card" data-aos="fade-up">
+              <div
+                className="card-img-top"
+                style={{
+                  backgroundImage: `url(${item.thumb})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  height: "200px",
+                }}
+              ></div>
+              <div className="card-body">
+                <h4 style={{ fontWeight: "700" }}>{item.name}</h4>
+                <p style={{ fontSize: "16px" }}>{convertDate(item.date)}</p>
+                <button>
+                  <Link to={`/book/${item.id}`}>{text.books.viewMore} →</Link>
+                </button>
               </div>
-            ))
-          ) : (
-            <div>{text.noResults}</div>
-          )}
-        </div>
+            </div>
+          ))
+        ) : (
+          <div>{text.noResults}</div>
+        )}
       </div>
       <div className="partners">
         <h1 data-aos="fade-right" className="text-center">

@@ -1,3 +1,6 @@
+.selectedPage {
+  min-height: 45vh;
+}
 .container .selectedCardWrapper .selectedCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6,6 +9,9 @@
   .container .selectedCardWrapper .selectedCard {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .container .selectedCardWrapper .selectedCard .card-body {
+    width: 100%;
   }
   .container .selectedCardWrapper .selectedCard .card-body .download {
     display: flex;
